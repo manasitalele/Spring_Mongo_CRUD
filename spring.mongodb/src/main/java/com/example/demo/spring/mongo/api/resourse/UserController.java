@@ -74,5 +74,13 @@ public List<Profile> getallusers(Profile profile) {
 			    return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 			  }
 		 }
+	 @GetMapping("/hellopooja")
+	 public String getpooja(Profile profile) {
+	     return "HII pooja how are you";
+	     }
+	 @GetMapping("/hellopooja3")
+	 public String getpooja3(Profile profile) {
+	     return "HII pooja2 ";
+	     }
 	 
 }
